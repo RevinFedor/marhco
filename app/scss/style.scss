@@ -20,13 +20,13 @@
         padding-left: 29px;
     }
     &__list-link{
-        @extend %quicksand-400;
+        @extend %roboto-400;
         padding: 0 3px 8px;
         color: $title;
         text-transform: uppercase;
         transition: all 0.3s;
         &:hover{
-            @extend %quicksand-500;
+            @extend %roboto-700;
             border-bottom: 1px solid $accent;
             color: $accent;
         }
@@ -34,7 +34,7 @@
     &__list-link--active{
         color: $accent;
         border-bottom: 1px solid $accent;
-        @extend %quicksand-500;
+        @extend %roboto-700;
     }
 }
 
