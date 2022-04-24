@@ -36,11 +36,12 @@ $bg: #f6f6f6;
 }
 
 %btn-p{
+    line-height: 13px;
     @extend %roboto-400;
     text-transform: uppercase;
     border: 1px solid $accent;
     color: $title;
-    padding: 12px 27px;
+    padding: 15px 27px;
     cursor: pointer;
     display: inline-block;
 }
