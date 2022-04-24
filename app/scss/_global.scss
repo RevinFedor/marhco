@@ -29,3 +29,24 @@ a{
     padding: 0 15px;
 }
 
+.title{
+    @extend %roboto-700;
+    font-size: 48px;
+    line-height: 1.5;
+    text-align: center;
+    color: $title;
+    margin-bottom: 10px;
+    &-accent{
+        @extend %quicksand-500;
+        color: $accent;
+        font-size: 22px;
+        text-transform: uppercase;
+    }
+}
+
+.text{
+    text-align: center;
+    margin: 0 auto 55px;
+    max-width: 570px;
+}
+

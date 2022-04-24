@@ -6,4 +6,5 @@ $(function(){
     autoplay: true,
     autoplaySpeed: 2000,
   });
+
 })
