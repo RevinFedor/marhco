@@ -468,3 +468,103 @@
         padding: 12px 30px;
     }
 }
+
+.product{
+    padding: 120px 0;
+    text-align: center;
+    &__items{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap:45px 30px ;
+        margin-bottom: 50px;
+    }
+    &__link {
+        text-transform: uppercase;
+        border: 1px solid $accent;
+        color: $title;
+        padding: 12px 27px;
+        cursor: pointer;
+        display: inline-block;
+    }
+}
+.product-item{
+    max-width: 370px;
+    text-align: center;
+    &-box{
+        position: relative;
+        height: 370px;
+        margin-bottom: 25px;
+        &:hover {
+            .product-item-links {
+                transform: translateY(0);
+                transition: all .3s;
+                opacity: 1;
+            }
+        }
+    }
+    &-links{
+        position: absolute;  
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+        background-color: #fff;
+        border-radius: 25px;
+        width: 220px;
+        height: 50px;
+        margin: 0 auto;
+        bottom: 50px;
+        transform: translateY(100%);
+        opacity: 0;
+        transition: all .3s;
+    }
+    &-link{
+        text-align: center;
+        line-height: 0;
+        width: 70px;
+        padding: 5px 0; 
+    }
+    &-link:nth-child(2){
+        border-right: 1px solid #ececec;
+        border-left: 1px solid #ececec;
+    }
+    &-link:hover{
+        path{
+            transition: all 0.3s;
+            fill: $accent;
+        }
+    }
+    .stars{
+        margin: 0 auto;
+    }
+    &__title{
+        font-size: 22px;
+        @extend %roboto-400;
+        color: $title;
+        margin: 10px 0 10px;
+    }
+    &__price{
+        display: flex;
+        justify-content: center;
+        @extend %roboto-400;
+        font-size: 16px;
+        color: $title;
+    }
+    &__old-price{
+        margin-left: 20px;
+        color: $def;
+        text-decoration: line-through;
+    }
+    &--sale{
+        .product-item-box::before{
+            position: absolute;
+            content: "SALE";
+            @extend %btn;
+            padding: 8px 12px;
+            top: 25px;
+            left: 25px;
+            line-height: 1;
+        }
+    }
+}
