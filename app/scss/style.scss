@@ -781,6 +781,32 @@
     }
 }
 
+.page-404{
+    padding: 120px 0;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__content{
+        padding: 140px 0;
+        max-width: 570px;
+    }
+    &__title{
+        @extend %roboto-700;
+        font-size: 48px;
+        color: #28384f;
+        line-height: 48px;
+        margin-bottom: 25px;
+    }
+    &__text{
+        max-width: 470px;
+        margin-bottom: 55px;
+    }
+    &__btn{
+        @extend %btn;
+    }
+}
+
 
 
 
