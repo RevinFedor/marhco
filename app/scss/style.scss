@@ -297,6 +297,9 @@
     }
 
 }
+.top-menu__title{
+    text-transform: uppercase;
+}
 
 
 .categories {
@@ -772,6 +775,9 @@
     &__error{
         margin-top: 12px;
         color: $accent;
+    }
+    &__text{
+        padding-bottom: 24px;
     }
 }
 
