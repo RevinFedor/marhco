@@ -19,7 +19,6 @@ body{
 
 a{
     color: $def;
-    font-size: 16px;
     @extend %quicksand-500;
 }
 
@@ -27,6 +26,16 @@ a{
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.top-container{
+    max-width: 1700px;
+    margin: 0 auto;
+    padding: 120px 0 130px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    text-align: center;
 }
 
 .title{
@@ -48,5 +57,50 @@ a{
     text-align: center;
     margin: 0 auto 55px;
     max-width: 571px;
+}
+
+
+.breanch{
+    display: inline-flex;
+    justify-content: center;
+    position: relative;
+    padding-left: 25px;
+    margin: 0 auto;
+    &::before{
+        content: "";
+        position: absolute;
+        background-image: url("../images/icons/home.svg");
+        width: 16px;
+        height: 16px;
+        left: 0;
+        top: 4px;
+    }
+    &__list{
+        display: flex;
+    }
+    &__item{
+        color: #727272;
+        padding-right: 40px;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            background-image: url("../images/icons/top-arrow.svg");
+            width: 9px;
+            height: 10px;
+            right: 15px;
+            top: 9px;
+        }
+        &:last-child{
+            color: $accent;
+            padding-right: 0;
+            &::after{
+                display: none;
+            }
+        }
+    }
+    &__link{
+        color: inherit;
+    }
 }
 
