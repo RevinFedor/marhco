@@ -1,4 +1,16 @@
 $(function(){
+
+  $(".shop__range-slider").ionRangeSlider({
+      onStart: function (data){
+        $('.shop__range--from').text(data.from);
+        $('.shop__range--to').text(data.to);
+      }, 
+      onChange: function (data){
+        $('.shop__range--from').text(data.from);
+        $('.shop__range--to').text(data.to);
+      }
+    });
+
   $('.top-slider__inner').slick({
     dots: true,
     arrows: false,
